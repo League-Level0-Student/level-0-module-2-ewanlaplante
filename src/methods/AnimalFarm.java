@@ -1,4 +1,4 @@
-package methods;
+	package methods;
 
 //Copyright (c) The League of Amazing Programmers 2013-2017
 //Level 0
@@ -18,9 +18,19 @@ AnimalFarm() {
 	 * 1. Ask the user which animal they want, then play the sound of that
 	 * animal.
 	 */
-
+	String animal = JOptionPane.showInputDialog("What animal do you want to hear. A cow, duck, dog, llama, or cat");
+	if(animal.equals("cow"))  {playMoo();}
+	if(animal.equals("duck"))  {playQuack();}
+	if(animal.equals("dog"))  {playWoof();}
+	if(animal.equals("cat"))  {playMeow();}
+	if(animal.equals("llama"))  {playLlama();}
+	
 	/* 2. Make it so that the user can keep entering new animals. */
-}
+	
+	 
+	 	 
+	 
+}                
 
 void playMoo() {
 	playNoise(mooFile);
@@ -33,6 +43,15 @@ void playQuack() {
 void playWoof() {
 	playNoise(woofFile);
 }
+
+void playMeow() {
+	playNoise(meowFile);
+}
+
+void playLlama() {
+	playNoise(llamaFile);
+}
+
 
 String quackFile = "quack.wav";
 String mooFile = "moo.wav";
