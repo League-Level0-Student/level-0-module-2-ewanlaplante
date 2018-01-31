@@ -48,7 +48,8 @@ public class DiceRoll {
 		rollButton.addActionListener((e) -> {
 
 			// 1. Make randomChoice equal to a random number between 1 and 6
-			int randomChoice = 0;
+			Random
+			int randomChoice = ;
 
 			// 2. Fix the code below so that it displays the correct image
 			if (randomChoice == 0) {
